@@ -110,9 +110,9 @@ nav {
   /* overflow-x: scroll;
   scroll-behavior: smooth; */
 }
-/* .body_wrapper::-webkit-scrollbar{
+body::-webkit-scrollbar{
     display: none;
-} */
+}
 .body_column {
   padding: 1rem;
 }

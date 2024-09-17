@@ -1,0 +1,128 @@
+/* side bar */
+aside {
+  background-color: var(--light-gray);
+  color: var(--white);
+  border-right: 1px solid var(--semi-white);
+  transition: 0.2s ease, color 0.2s ease;
+}
+.board_item {
+  background-color: var(--light-gray);
+  border: none;
+  color: var(--semi-white);
+  cursor: pointer;
+}
+.board_item:hover {
+  background-color: var(--violet);
+  color: var(--white);
+}
+.active {
+  background-color: var(--violet);
+  color: var(--white);
+}
+.active .board_icon {
+  filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(5);
+}
+.create_new_board {
+  background-color: var(--light-gray);
+  border: none;
+  color: var(--violet);
+  cursor: pointer;
+}
+.board_item:hover .board_icon {
+  filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(5);
+}
+.create_new_board:hover .board_icon {
+  filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(5);
+}
+/* main app */
+.app_main {
+  transition: 0.2s ease, color 0.2s ease;
+}
+/* nav */
+nav {
+  background-color: var(--light-gray);
+  border-bottom: 1px solid var(--semi-white);
+}
+.nav_logo {
+  color: var(--white);
+}
+.nav_btn {
+  color: var(--white);
+  background-color: var(--violet);
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+}
+.nav_btn:hover {
+  background-color: var(--light-violet);
+}
+.DropDown__button-ellipsis {
+  opacity: 1;
+  color: #828fa3;
+  transition: 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  background-color: var(--light-gray);
+  border: none;
+}
+.DropDown__button-ellipsis:hover {
+  background-color: var(--dark-gray);
+}
+/* app body */
+.app_body {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+/* body wrapper */
+._blue {
+  background-color: var(--light-blue);
+}
+._violet {
+  background-color: var(--violet);
+}
+._green {
+  background-color: var(--light-green);
+}
+.body_columns_card {
+  background-color: var(--light-gray);
+}
+.body_column_add {
+  background-color: var(--light-gray);
+  cursor: pointer;
+}
+.body_column_add {
+  background-color: var(--light-gray);
+}
+.body_column_add:hover {
+  background-color: var(--semi-white);
+}
+/* dealing with tasks */
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+}
+form input,
+form textarea,
+form select {
+  margin-bottom: 10px;
+  border: 1px solid var(--light-gray);
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+form button {
+  background: var(--violet);
+  color: var(--white);
+  cursor: pointer;
+}
+form button:hover {
+  background: var(--light-violet);
+}
+button.edit-button,
+button.delete-button {
+  background: var(--dark-gray);
+  color: var(--semi-white);
+  cursor: pointer;
+}
+button.edit-button:hover,
+button.delete-button:hover {
+  background: var(--semi-white);
+}

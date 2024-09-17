@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>Kanban Task Management</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <aside class="side_bar">
+          <div class="logo_box">
+            <img
+              src="./src/assets/logo-light.svg"
+              alt="kanban logo"
+              class="logo"
+            />
+          </div>
+          <div class="boardes">
+            <h5 class="boards_title">All Boards</h5>
+            <div class="board_items poppins-regular">
+              <button class="board_item active">
+                <svg
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="board_icon"
+                >
+                  <path
+                    d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                    fill="#828FA3"
+                  />
+                </svg>
+                <span>Platform Launch</span>
+              </button>
+              <button class="board_item">
+                <svg
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="board_icon"
+                >
+                  <path
+                    d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                    fill="#828FA3"
+                  />
+                </svg>
+                <span>Marketing Plan</span>
+              </button>
+              <button class="board_item">
+                <svg
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="board_icon"
+                >
+                  <path
+                    d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                    fill="#828FA3"
+                  />
+                </svg>
+                <span>Roadmap</span>
+              </button>
+              <button class="create_new_board">
+                <svg
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="board_icon"
+                >
+                  <path
+                    d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z"
+                    fill="#828FA3"
+                  />
+                </svg>
+                <span>+ Create New Board</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+        <div class="app_main">
+          <nav>
+            <h2 class="nav_logo poppins-medium">Platform Launch</h2>
+            <div class="nav_btns">
+              <button class="nav_btn poppins-medium" id="open-modal-button">+ Add New Task</button>
+              <button class="DropDown__button-ellipsis">
+                <span class="burger"
+                  ><svg
+                    width="5"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g fill="#828FA3" fill-rule="evenodd">
+                      <circle cx="2.308" cy="2.308" r="2.308" />
+                      <circle cx="2.308" cy="10" r="2.308" />
+                      <circle cx="2.308" cy="17.692" r="2.308" />
+                    </g>
+                  </svg>
+                </span>
+                <span class="close side_bar_close_btn"
+                  ><svg
+                    width="10"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18 18 6M6 6l12 12"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </nav>
+          <div class="app_body">
+            <div class="body_wrapper">
+              <div class="body_column" id="todo-section">
+                <div class="body_column_title">
+                  <span class="color _blue"></span>
+                  <h5>ToDo</h5>
+                </div>
+                <!-- <div class="body_columns_cards">
+                  <div class="body_columns_card">
+                    <h5 class="body_columns_card_title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </h5>
+                  </div>
+                  <div class="body_columns_card">
+                    <h5 class="body_columns_card_title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </h5>
+                  </div>
+                </div> -->
+                <ul id="todo-list"></ul>
+              </div>
+              <div class="body_column" id="progress-section">
+                <div class="body_column_title">
+                  <span class="color _violet"></span>
+                  <h5>Progress</h5>
+                </div>
+                <!-- <div class="body_columns_cards">
+                  <div class="body_columns_card">
+                    <h5 class="body_columns_card_title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </h5>
+                  </div>
+                  <div class="body_columns_card">
+                    <h5 class="body_columns_card_title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </h5>
+                  </div>
+                </div> -->
+                <ul id="progress-list"></ul>
+              </div>
+              <div class="body_column" id="done-section">
+                <div class="body_column_title">
+                  <span class="color _green"></span>
+                  <h5>Done</h5>
+                </div>
+                <!-- <div class="body_columns_cards">
+                  <div class="body_columns_card">
+                    <h5 class="body_columns_card_title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </h5>
+                  </div>
+                  <div class="body_columns_card">
+                    <h5 class="body_columns_card_title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </h5>
+                  </div>
+                </div> -->
+                <ul id="done-list"></ul>
+              </div>
+              <div class="body_column body_column_add">
+                <h5 class="body_column_title_add">+ Add column</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="task-modal" class="modal">
+          <div class="modal-content">
+              <!-- Button to close the modal -->
+              <span class="close-button" id="close-modal-button">&times;</span>
+              <h2 id="modal-title">Add Task</h2>
+              <form id="task-form">
+                  <!-- Hidden input to store the ID of the task being edited -->
+                  <input type="hidden" id="task-id">
+                  <label for="task-title">Title:</label>
+                  <input type="text" id="task-title" required>
+                  <label for="task-description">Description:</label>
+                  <textarea id="task-description" required></textarea>
+                  <label for="task-section">Move to:</label>
+                  <select id="task-section">
+                      <option value="todo">Todo</option>
+                      <option value="progress">In Progress</option>
+                      <option value="done">Done</option>
+                  </select>
+                  <button type="submit" id="save-task-button">Add Task</button>
+              </form>
+          </div>
+      </div>
+    </main>
+    <!-- js -->
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+/* wrapper */
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+/* side bar */
+aside {
+  width: 15%;
+  height: 100vh;
+}
+.logo_box {
+  width: 100%;
+  padding: 3.5rem 2rem;
+}
+.boards_title {
+  padding: 1rem 2rem;
+}
+.board_item {
+  width: 90%;
+  padding: 0.8rem 2rem;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.board_item > span {
+  margin-left: 1rem;
+}
+.create_new_board {
+  width: 90%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}
+.create_new_board > span {
+  margin-left: 1rem;
+}
+.board_items:first-child {
+  margin-top: 0.5rem;
+}
+@media (max-width: 1024px) {
+  aside {
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -50%;
+  }
+  .app_main {
+    width: 100%;
+  }
+  .wrapper {
+    width: 120%;
+  }
+}
+.show_sidebar {
+  left: 0;
+}
+.side_bar_close_btn {
+  display: none;
+}
+/* main app */
+.app_main {
+  width: 85%;
+}
+/* nav */
+nav {
+  width: 100%;
+  height: 9.5rem;
+  padding: 0rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_btn {
+  padding: 0.6rem 1.4rem;
+}
+.DropDown__button-ellipsis {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  height: 3rem;
+  border-radius: 10px;
+  display: none;
+}
+@media (max-width: 1024px) {
+  .DropDown__button-ellipsis {
+    display: block;
+  }
+}
+.nav_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* app body */
+.app_body {
+  height: 86.7vh;
+  padding: 2rem 1.5rem;
+}
+
+/* body wrapper */
+.body_wrapper {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  /* grid-template-columns: repeat(4, 24rem); */
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 2.5rem;
+  /* overflow-x: scroll;
+  scroll-behavior: smooth; */
+}
+/* .body_wrapper::-webkit-scrollbar{
+    display: none;
+} */
+.body_column {
+  padding: 1rem;
+}
+.body_column_title {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.color {
+  width: 15px;
+  height: 15px; /* Circle diameter */
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 10px;
+}
+.body_columns_cards {
+  margin-top: 1rem;
+}
+.body_columns_card {
+  background-color: var(--light-gray);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+.body_columns_card:not(:first-child) {
+  margin-top: 0.7rem;
+}
+.body_column_add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+}
+/* dealing with tasks */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+}
+
+.modal-content {
+  background-color: var(--dark-gray);
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+form button {
+  background: var(--violet);
+  width: 100%;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: var(--light-gray);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button.edit-button,
+button.delete-button {
+  background: var(--dark-gray);
+  border: none;
+  padding: 5px 10px;
+  color: var(--semi-white);
+  border-radius: 4px;
+  cursor: pointer;
+}
+p {
+  display: none;
+}
+.card_title {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
